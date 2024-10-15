@@ -58,11 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmTasarım.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmTasarım.Designer.cs">
+      <DependentUpon>frmTasarım.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDersler.cs">
       <SubType>Form</SubType>
@@ -129,8 +129,8 @@
     <Compile Include="TblOgrenci.cs">
       <DependentUpon>ModelEntity.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmTasarım.resx">
+      <DependentUpon>frmTasarım.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDersler.resx">
       <DependentUpon>frmDersler.cs</DependentUpon>

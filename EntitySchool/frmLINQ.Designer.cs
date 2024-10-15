@@ -50,10 +50,8 @@
             this.rdbSınav2Toplam = new System.Windows.Forms.RadioButton();
             this.rdbDersiGecenler = new System.Windows.Forms.RadioButton();
             this.rdbdersKaldı = new System.Windows.Forms.RadioButton();
-            this.btnNotListesi = new System.Windows.Forms.Button();
             this.rdbOrtMax = new System.Windows.Forms.RadioButton();
             this.rdbOrtMin = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.btnJoin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -195,7 +193,7 @@
             this.btnLINQ.BackColor = System.Drawing.Color.DarkGray;
             this.btnLINQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnLINQ.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLINQ.Location = new System.Drawing.Point(8, 742);
+            this.btnLINQ.Location = new System.Drawing.Point(8, 500);
             this.btnLINQ.Name = "btnLINQ";
             this.btnLINQ.Size = new System.Drawing.Size(176, 48);
             this.btnLINQ.TabIndex = 48;
@@ -207,9 +205,9 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(475, 32);
+            this.dataGridView1.Location = new System.Drawing.Point(448, 21);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1156, 473);
+            this.dataGridView1.Size = new System.Drawing.Size(1352, 473);
             this.dataGridView1.TabIndex = 49;
             // 
             // rdbSınav1Toplam
@@ -217,7 +215,7 @@
             this.rdbSınav1Toplam.AutoSize = true;
             this.rdbSınav1Toplam.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbSınav1Toplam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdbSınav1Toplam.Location = new System.Drawing.Point(30, 494);
+            this.rdbSınav1Toplam.Location = new System.Drawing.Point(448, 500);
             this.rdbSınav1Toplam.Name = "rdbSınav1Toplam";
             this.rdbSınav1Toplam.Size = new System.Drawing.Size(239, 28);
             this.rdbSınav1Toplam.TabIndex = 50;
@@ -230,7 +228,7 @@
             this.rdbSınav1Ortalama.AutoSize = true;
             this.rdbSınav1Ortalama.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbSınav1Ortalama.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdbSınav1Ortalama.Location = new System.Drawing.Point(30, 528);
+            this.rdbSınav1Ortalama.Location = new System.Drawing.Point(448, 534);
             this.rdbSınav1Ortalama.Name = "rdbSınav1Ortalama";
             this.rdbSınav1Ortalama.Size = new System.Drawing.Size(214, 28);
             this.rdbSınav1Ortalama.TabIndex = 51;
@@ -243,7 +241,7 @@
             this.rdbSınav3Ortalama.AutoSize = true;
             this.rdbSınav3Ortalama.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbSınav3Ortalama.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdbSınav3Ortalama.Location = new System.Drawing.Point(818, 606);
+            this.rdbSınav3Ortalama.Location = new System.Drawing.Point(1012, 534);
             this.rdbSınav3Ortalama.Name = "rdbSınav3Ortalama";
             this.rdbSınav3Ortalama.Size = new System.Drawing.Size(214, 28);
             this.rdbSınav3Ortalama.TabIndex = 53;
@@ -256,7 +254,7 @@
             this.rdbSınav3Toplam.AutoSize = true;
             this.rdbSınav3Toplam.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbSınav3Toplam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdbSınav3Toplam.Location = new System.Drawing.Point(818, 572);
+            this.rdbSınav3Toplam.Location = new System.Drawing.Point(1012, 500);
             this.rdbSınav3Toplam.Name = "rdbSınav3Toplam";
             this.rdbSınav3Toplam.Size = new System.Drawing.Size(239, 28);
             this.rdbSınav3Toplam.TabIndex = 52;
@@ -269,7 +267,7 @@
             this.rdbSınav2Ortalama.AutoSize = true;
             this.rdbSınav2Ortalama.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbSınav2Ortalama.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdbSınav2Ortalama.Location = new System.Drawing.Point(497, 606);
+            this.rdbSınav2Ortalama.Location = new System.Drawing.Point(728, 534);
             this.rdbSınav2Ortalama.Name = "rdbSınav2Ortalama";
             this.rdbSınav2Ortalama.Size = new System.Drawing.Size(214, 28);
             this.rdbSınav2Ortalama.TabIndex = 55;
@@ -282,7 +280,7 @@
             this.rdbSınav2Toplam.AutoSize = true;
             this.rdbSınav2Toplam.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbSınav2Toplam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdbSınav2Toplam.Location = new System.Drawing.Point(497, 572);
+            this.rdbSınav2Toplam.Location = new System.Drawing.Point(728, 500);
             this.rdbSınav2Toplam.Name = "rdbSınav2Toplam";
             this.rdbSınav2Toplam.Size = new System.Drawing.Size(239, 28);
             this.rdbSınav2Toplam.TabIndex = 54;
@@ -295,7 +293,7 @@
             this.rdbDersiGecenler.AutoSize = true;
             this.rdbDersiGecenler.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbDersiGecenler.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdbDersiGecenler.Location = new System.Drawing.Point(1192, 572);
+            this.rdbDersiGecenler.Location = new System.Drawing.Point(1305, 500);
             this.rdbDersiGecenler.Name = "rdbDersiGecenler";
             this.rdbDersiGecenler.Size = new System.Drawing.Size(191, 28);
             this.rdbDersiGecenler.TabIndex = 57;
@@ -308,7 +306,7 @@
             this.rdbdersKaldı.AutoSize = true;
             this.rdbdersKaldı.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbdersKaldı.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdbdersKaldı.Location = new System.Drawing.Point(1192, 606);
+            this.rdbdersKaldı.Location = new System.Drawing.Point(1305, 534);
             this.rdbdersKaldı.Name = "rdbdersKaldı";
             this.rdbdersKaldı.Size = new System.Drawing.Size(221, 28);
             this.rdbdersKaldı.TabIndex = 59;
@@ -316,24 +314,12 @@
             this.rdbdersKaldı.Text = "DERSTEN KALANLAR";
             this.rdbdersKaldı.UseVisualStyleBackColor = true;
             // 
-            // btnNotListesi
-            // 
-            this.btnNotListesi.BackColor = System.Drawing.Color.DarkGray;
-            this.btnNotListesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnNotListesi.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnNotListesi.Location = new System.Drawing.Point(8, 678);
-            this.btnNotListesi.Name = "btnNotListesi";
-            this.btnNotListesi.Size = new System.Drawing.Size(176, 48);
-            this.btnNotListesi.TabIndex = 60;
-            this.btnNotListesi.Text = "NOT LİSTESİ";
-            this.btnNotListesi.UseVisualStyleBackColor = false;
-            // 
             // rdbOrtMax
             // 
             this.rdbOrtMax.AutoSize = true;
             this.rdbOrtMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbOrtMax.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdbOrtMax.Location = new System.Drawing.Point(1473, 572);
+            this.rdbOrtMax.Location = new System.Drawing.Point(1556, 500);
             this.rdbOrtMax.Name = "rdbOrtMax";
             this.rdbOrtMax.Size = new System.Drawing.Size(244, 28);
             this.rdbOrtMax.TabIndex = 61;
@@ -346,7 +332,7 @@
             this.rdbOrtMin.AutoSize = true;
             this.rdbOrtMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rdbOrtMin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rdbOrtMin.Location = new System.Drawing.Point(1473, 606);
+            this.rdbOrtMin.Location = new System.Drawing.Point(1556, 534);
             this.rdbOrtMin.Name = "rdbOrtMin";
             this.rdbOrtMin.Size = new System.Drawing.Size(233, 28);
             this.rdbOrtMin.TabIndex = 62;
@@ -354,25 +340,12 @@
             this.rdbOrtMin.Text = "EN DÜŞÜK ORTALAMA";
             this.rdbOrtMin.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButton1.Location = new System.Drawing.Point(487, 678);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(214, 28);
-            this.radioButton1.TabIndex = 63;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "SINAV 2 ORTALAMA ";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // btnJoin
             // 
             this.btnJoin.BackColor = System.Drawing.Color.DarkGray;
             this.btnJoin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnJoin.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnJoin.Location = new System.Drawing.Point(213, 709);
+            this.btnJoin.Location = new System.Drawing.Point(213, 500);
             this.btnJoin.Name = "btnJoin";
             this.btnJoin.Size = new System.Drawing.Size(176, 48);
             this.btnJoin.TabIndex = 64;
@@ -385,12 +358,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(1875, 802);
+            this.ClientSize = new System.Drawing.Size(1875, 588);
             this.Controls.Add(this.btnJoin);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.rdbOrtMin);
             this.Controls.Add(this.rdbOrtMax);
-            this.Controls.Add(this.btnNotListesi);
             this.Controls.Add(this.rdbdersKaldı);
             this.Controls.Add(this.rdbDersiGecenler);
             this.Controls.Add(this.rdbSınav2Ortalama);
@@ -447,10 +418,8 @@
         private System.Windows.Forms.RadioButton rdbSınav2Toplam;
         private System.Windows.Forms.RadioButton rdbDersiGecenler;
         private System.Windows.Forms.RadioButton rdbdersKaldı;
-        private System.Windows.Forms.Button btnNotListesi;
         private System.Windows.Forms.RadioButton rdbOrtMax;
         private System.Windows.Forms.RadioButton rdbOrtMin;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button btnJoin;
     }
 }

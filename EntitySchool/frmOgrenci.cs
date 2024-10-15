@@ -23,9 +23,9 @@ namespace EntitySchool
         {
             try
             {
-                dataGridView1.DataSource = db.TblOgrenci.ToList(); //tblOgrenci ye ait tüm verileri listele
-                dataGridView1.Columns[3].Visible = false;
-                dataGridView1.Columns[4].Visible = false;
+                dgvOgrenci.DataSource = db.TblOgrenci.ToList(); //tblOgrenci ye ait tüm verileri listele
+                dgvOgrenci.Columns[3].Visible = false;
+                dgvOgrenci.Columns[4].Visible = false;
 
             }
             catch (EntityException ex)
@@ -39,7 +39,6 @@ namespace EntitySchool
             txtOgrenciId.Clear();
             txtOgrenciAd.Clear();
             txtOgrenciSoyad.Clear();
-            txtOgrenciFoto.Clear();
         }
         private void btnGüncelle_Click(object sender, EventArgs e)
         {
@@ -53,7 +52,6 @@ namespace EntitySchool
                     var ogrenci = db.TblOgrenci.Find(id);
                     ogrenci.Ad = txtOgrenciAd.Text;
                     ogrenci.Soyad = txtOgrenciSoyad.Text;
-                    ogrenci.Fotograf = txtOgrenciFoto.Text;
                     db.SaveChanges();
                     MessageBox.Show("Öğrenci güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     OgrenciListele();
@@ -142,7 +140,7 @@ namespace EntitySchool
                 //ilgili textboxta ki verilere göre listele (küçük / büyük harf duyarlılığı yok)
                 //direkt isme göre arama yapmak istiyorsan >> dataGridView1.DataSource = db.TblOgrenci.Where(x => x.Ad == txtOgrenciAd.Text).ToList(); 
                 //birden fazla sorgulama yapabiliriz && ile :
-                dataGridView1.DataSource = db.TblOgrenci.Where(x => x.Ad == txtOgrenciAd.Text && x.Soyad == txtOgrenciSoyad.Text).ToList();
+                dgvOgrenci.DataSource = db.TblOgrenci.Where(x => x.Ad == txtOgrenciAd.Text && x.Soyad == txtOgrenciSoyad.Text).ToList();
                 // || veya dersen yukarıdaki kod için  o isme veya o soyadına sahip olan herkesi listeler
             }
             catch (SqlException ex)
@@ -168,7 +166,7 @@ namespace EntitySchool
                              where ogr.Ad.Contains(arananDeger) //hepsini listelememesi için bir koşul yazıyoruz > eğer ogr adı "arananDeger" içeriyorsa > listele 
                              where ogr.Ad.StartsWith(arananDeger) //yukarıdaki direkt içeriyorsa > ama bu satır direkt "arananDeger" ile başlayanları getirir.
                              select ogr;
-                dataGridView1.DataSource = result.ToList();
+                dgvOgrenci.DataSource = result.ToList();
             }
             catch (SqlException ex)
             {
@@ -185,7 +183,7 @@ namespace EntitySchool
         {
             try
             {
-                dataGridView1.DataSource = db.NotListesi(); //prosedürü çağırıp uzun sql sorguları yerine sadece prosedür metodunu/nesnesini çağırdım
+                dgvOgrenci.DataSource = db.NotListesi(); //prosedürü çağırıp uzun sql sorguları yerine sadece prosedür metodunu/nesnesini çağırdım
             }
             catch (SqlException ex)
             {
@@ -206,9 +204,9 @@ namespace EntitySchool
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (dgvOgrenci.SelectedRows.Count > 0)
             {
-                var selectedRow = dataGridView1.SelectedRows[0];
+                var selectedRow = dgvOgrenci.SelectedRows[0];
                 var student = selectedRow.DataBoundItem as TblOgrenci;
 
                 if (student != null)
@@ -216,7 +214,6 @@ namespace EntitySchool
                     txtOgrenciId.Text = student.Id.ToString();
                     txtOgrenciAd.Text = student.Ad;
                     txtOgrenciSoyad.Text = student.Soyad;
-                    txtOgrenciFoto.Text = student.Fotograf;
                 }
             }
         }

@@ -105,6 +105,8 @@ namespace EntitySchool
                     db.SaveChanges();
                         MessageBox.Show("Not Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         NotListele();
+                    txtSınavOrt.Clear();
+                    txtDurum.Clear();
                 }
             }
             catch (SqlException ex)

@@ -32,8 +32,6 @@
             this.btnTemizleOgr = new System.Windows.Forms.Button();
             this.txtOgrenciAd = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtOgrenciFoto = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtOgrenciSoyad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtOgrenciId = new System.Windows.Forms.TextBox();
@@ -44,9 +42,9 @@
             this.btnGüncelle = new System.Windows.Forms.Button();
             this.btnOgrenciListele = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvOgrenci = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOgrenci)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -55,8 +53,6 @@
             this.groupBox1.Controls.Add(this.btnTemizleOgr);
             this.groupBox1.Controls.Add(this.txtOgrenciAd);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtOgrenciFoto);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtOgrenciSoyad);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtOgrenciId);
@@ -100,23 +96,6 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "AD :";
             // 
-            // txtOgrenciFoto
-            // 
-            this.txtOgrenciFoto.Location = new System.Drawing.Point(163, 142);
-            this.txtOgrenciFoto.Name = "txtOgrenciFoto";
-            this.txtOgrenciFoto.Size = new System.Drawing.Size(231, 20);
-            this.txtOgrenciFoto.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(17, 136);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 25);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "FOTOĞRAF :";
-            // 
             // txtOgrenciSoyad
             // 
             this.txtOgrenciSoyad.Location = new System.Drawing.Point(163, 100);
@@ -138,6 +117,7 @@
             // 
             this.txtOgrenciId.Location = new System.Drawing.Point(163, 19);
             this.txtOgrenciId.Name = "txtOgrenciId";
+            this.txtOgrenciId.ReadOnly = true;
             this.txtOgrenciId.Size = new System.Drawing.Size(231, 20);
             this.txtOgrenciId.TabIndex = 1;
             // 
@@ -160,7 +140,7 @@
             this.btnProcedure.Name = "btnProcedure";
             this.btnProcedure.Size = new System.Drawing.Size(221, 48);
             this.btnProcedure.TabIndex = 19;
-            this.btnProcedure.Text = "PROSEDÜR";
+            this.btnProcedure.Text = "NOTLAR";
             this.btnProcedure.UseVisualStyleBackColor = false;
             this.btnProcedure.Click += new System.EventHandler(this.btnProcedure_Click);
             // 
@@ -206,13 +186,13 @@
             // btnOgrenciListele
             // 
             this.btnOgrenciListele.BackColor = System.Drawing.Color.DarkGray;
-            this.btnOgrenciListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOgrenciListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOgrenciListele.ForeColor = System.Drawing.SystemColors.Control;
             this.btnOgrenciListele.Location = new System.Drawing.Point(494, 517);
             this.btnOgrenciListele.Name = "btnOgrenciListele";
             this.btnOgrenciListele.Size = new System.Drawing.Size(176, 48);
             this.btnOgrenciListele.TabIndex = 12;
-            this.btnOgrenciListele.Text = "ÖĞRNECİ LİSTELE";
+            this.btnOgrenciListele.Text = "ÖĞRENCİ LİSTESİ";
             this.btnOgrenciListele.UseVisualStyleBackColor = false;
             this.btnOgrenciListele.Click += new System.EventHandler(this.btnOgrenciListele_Click);
             // 
@@ -227,15 +207,16 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "ÖĞRENCİ";
             // 
-            // dataGridView1
+            // dgvOgrenci
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 111);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(833, 366);
-            this.dataGridView1.TabIndex = 21;
-            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            this.dgvOgrenci.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvOgrenci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvOgrenci.Location = new System.Drawing.Point(43, 111);
+            this.dgvOgrenci.Name = "dgvOgrenci";
+            this.dgvOgrenci.ReadOnly = true;
+            this.dgvOgrenci.Size = new System.Drawing.Size(833, 366);
+            this.dgvOgrenci.TabIndex = 21;
+            this.dgvOgrenci.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // frmOgrenci
             // 
@@ -243,7 +224,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(927, 755);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvOgrenci);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnProcedure);
             this.Controls.Add(this.btnKaydet);
@@ -258,7 +239,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmOgrenci_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOgrenci)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,8 +251,6 @@
         private System.Windows.Forms.Button btnTemizleOgr;
         private System.Windows.Forms.TextBox txtOgrenciAd;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtOgrenciFoto;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtOgrenciSoyad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtOgrenciId;
@@ -282,6 +261,6 @@
         private System.Windows.Forms.Button btnGüncelle;
         private System.Windows.Forms.Button btnOgrenciListele;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvOgrenci;
     }
 }

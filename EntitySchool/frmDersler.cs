@@ -47,6 +47,7 @@ namespace EntitySchool
         private void btnDersListesi_Click(object sender, EventArgs e)
         {
             DersListele();
+            TemizleDers();
         }
 
         private void btnTemizleDers_Click(object sender, EventArgs e)
@@ -66,6 +67,7 @@ namespace EntitySchool
                     db.SaveChanges();
                     MessageBox.Show("Ders listeye eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     DersListele();
+                    TemizleDers();
                 }
             }
             catch (SqlException ex)
@@ -91,6 +93,7 @@ namespace EntitySchool
                     db.SaveChanges();
                     MessageBox.Show("Ders güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     DersListele();
+                    TemizleDers();
                 }
             }
             catch (SqlException ex)
@@ -117,6 +120,7 @@ namespace EntitySchool
                     db.SaveChanges();
                     MessageBox.Show("Ders listeden silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     DersListele();
+                    TemizleDers();
                 }
             }
             catch (SqlException ex)

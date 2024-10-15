@@ -13,9 +13,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace EntitySchool
 {
-    public partial class Form1 : Form
+    public partial class frmTasarım : Form
     {
-        public Form1()
+        public frmTasarım()
         {
             InitializeComponent();
         }

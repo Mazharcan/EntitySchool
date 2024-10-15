@@ -281,5 +281,10 @@ namespace EntitySchool
                 MessageBox.Show("HATA : " + ex.Message);
             }
         }
+
+        private void btnNotListesi_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

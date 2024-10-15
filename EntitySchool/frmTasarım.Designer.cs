@@ -1,6 +1,6 @@
 ﻿namespace EntitySchool
 {
-    partial class Form1
+    partial class frmTasarım
     {
         /// <summary>
         /// Required designer variable.

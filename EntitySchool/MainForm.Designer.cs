@@ -43,7 +43,7 @@
             this.btnOgr.Name = "btnOgr";
             this.btnOgr.Size = new System.Drawing.Size(263, 93);
             this.btnOgr.TabIndex = 0;
-            this.btnOgr.Text = "ÖĞRENCİ";
+            this.btnOgr.Text = "ÖĞRENCİLER";
             this.btnOgr.UseVisualStyleBackColor = false;
             this.btnOgr.Click += new System.EventHandler(this.btnOgr_Click);
             // 

@@ -30,7 +30,6 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnProcedure = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.btnGüncelle = new System.Windows.Forms.Button();
@@ -52,6 +51,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(29, 103);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(833, 366);
             this.dataGridView1.TabIndex = 29;
@@ -68,19 +68,6 @@
             this.label4.Size = new System.Drawing.Size(252, 55);
             this.label4.TabIndex = 28;
             this.label4.Text = "DERSLER";
-            // 
-            // btnProcedure
-            // 
-            this.btnProcedure.BackColor = System.Drawing.Color.DarkGray;
-            this.btnProcedure.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnProcedure.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnProcedure.Location = new System.Drawing.Point(529, 617);
-            this.btnProcedure.Name = "btnProcedure";
-            this.btnProcedure.Size = new System.Drawing.Size(221, 48);
-            this.btnProcedure.TabIndex = 27;
-            this.btnProcedure.Text = "PROSEDÜR";
-            this.btnProcedure.UseVisualStyleBackColor = false;
-            this.btnProcedure.Click += new System.EventHandler(this.btnProcedure_Click);
             // 
             // btnKaydet
             // 
@@ -171,6 +158,7 @@
             // 
             this.txtDersId.Location = new System.Drawing.Point(163, 19);
             this.txtDersId.Name = "txtDersId";
+            this.txtDersId.ReadOnly = true;
             this.txtDersId.Size = new System.Drawing.Size(231, 20);
             this.txtDersId.TabIndex = 5;
             // 
@@ -207,7 +195,6 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnProcedure);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnGüncelle);
@@ -228,7 +215,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnProcedure;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnGüncelle;
